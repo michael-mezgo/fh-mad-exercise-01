@@ -22,7 +22,7 @@ class AppTest {
         val classUnderTest = App()
         val generatedNumber = classUnderTest.generateRandomNonRepeatingNumber(4)
 
-        assertEquals(generatedNumber.toString().length, 4)
+        assertEquals(4, generatedNumber.toString().length)
     }
 
     @Test

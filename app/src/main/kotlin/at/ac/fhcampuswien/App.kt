@@ -10,19 +10,18 @@ class App {
     }
 
     /**
-     * Generates a non-repeating number of a specified length smaller than 10 digits.
+     * Generates a non-repeating number of a specified length between 1-9.
      *
      * Note: The function is designed to generate a number where each digit is unique and does not repeat.
      * It is important to ensure that the length parameter does not exceed the maximum possible length
-     * for non-repeating digits (which is 10 for base-10 numbers, as there are only 10 unique digits).
+     * for non-repeating digits (which is 9 excluding 0 for base-10 numbers).
      *
      * @param length The length of the non-repeating number to be generated.
      *               This dictates how many digits the generated number will have.
      * @return An integer of generated non-repeating number.
      *         The generated number will have a number of digits equal to the specified length and will
      *         contain unique, non-repeating digits.
-     * @throws IllegalArgumentException if the length is more than 10 or less than 1, as it's not possible
-     *         to generate a non-repeating number with more than 10 unique digits or with no digits.
+     * @throws IllegalArgumentException if the length is more than 9 or less than 1.
      */
     val generateRandomNonRepeatingNumber: (Int) -> Int = { length ->
         //TODO implement the function

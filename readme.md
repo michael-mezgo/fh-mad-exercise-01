@@ -24,7 +24,7 @@ val a: String = "value" // non-null type
 ### Provide a solution for the following number guessing game inside `App.kt`. (3 points)
 
 ## Number Guessing Game in Kotlin
-The game is a simple number guessing game. The task is to generate a random, max 9-digit, number. The number must **not contain repeating digits**. 
+The game is a simple number guessing game. The task is to generate a random, max 9-digit, number. The number must **not contain repeating digits**. Valid digits are 1-9.
 Ask the user to guess the max 9-digit number. The game is finished when the user guesses the correct digits in the correct order.
 In each round, the user gets feedback about the number of correct digits and the number of correct digits in the correct position.
 The output should be in the format "n:m", where "n" is the number of digits guessed correctly regardless of their position, 
