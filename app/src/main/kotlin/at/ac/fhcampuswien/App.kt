@@ -39,8 +39,8 @@ class App {
      * @param input The user's input integer. It should be a number with non-repeating digits.
      * @param generatedNumber The generated number with non-repeating digits to compare against.
      * @return [CompareResult] with two properties:
-     *         1. `m`: The number of digits guessed correctly (regardless of their position).
-     *         2. `n`: The number of digits guessed correctly and in the correct position.
+     *         1. `n`: The number of digits guessed correctly (regardless of their position).
+     *         2. `m`: The number of digits guessed correctly and in the correct position.
      *         The result is formatted as "Output: m:n", where "m" and "n" represent the above values, respectively.
      * @throws IllegalArgumentException if the inputs do not have the same number of digits.
      */
