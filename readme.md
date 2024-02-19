@@ -9,17 +9,25 @@
 ## Questions
 ### Describe how Kotlin handles null safety. What are nullable types and non-null types in Kotlin? (0,5 points)
 
-<span style="color:blue">Provide your answer here! </span>
-> Note: you can also use code snippets to illustrate your answer. 
+Answer:
+> Kotlin is null-safe. That means, that null values cannot be used by default. If you would like to use nullable types, you can write a "?" after the data type. 
+> The compiler enforces you to check then every time, if the variable is null or not. You can to this checks with the "?". 
+> There is also a "force-solution" with "!!" to say, that the type is **defenetly not null** and skip the checks. 
+> But this can lead to a null-pointer exceptions and should **not** be used on a regular basis (only when you can be sure, that the variable is not null).
 
-```kotlin 
-// example code snippet
+Example:
+```kotlin
 val a: String = "value" // non-null type
+val b: String? = null // nullable type
+b?.count() // count is only computed, when b is not null
+b!!.count() // "force" -> b is definitely not null (checked from the developer) - exceptions possible
 ```
 
 ### What are lambda expressions and higher order functions in Kotlin? Why would you store a function inside a variable? (0,5 points)
 
-<span style="color:blue">Provide your answer here!</span>
+Answer:
+> You would like to store a function inside a variable to hand different implementations over to an other function.
+> Example: fun for printing messages and you want to hand over different implementations for user and admin messages
 
 ### Provide a solution for the following number guessing game inside `App.kt`. (3 points)
 
