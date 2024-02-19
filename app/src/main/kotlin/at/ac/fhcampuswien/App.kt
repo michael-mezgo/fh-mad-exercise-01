@@ -108,5 +108,5 @@ class App {
 
 fun main() {
     App().playNumberGame()
-    //App().playNumberGame(digitsToGuess = 5) // OR: App().playNumberGame(5)
+    App().playNumberGame(digitsToGuess = 5) // OR: App().playNumberGame(5)
 }
