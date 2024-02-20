@@ -75,16 +75,16 @@ class AppTest {
     fun inputAndRandomNumberHaveNoMatchingDigits() {
         val classUnderTest = App()
         val toTest =  classUnderTest.checkUserInputAgainstGeneratedNumber(1234,8576)
-        assertEquals(0, toTest.m)
         assertEquals(0, toTest.n)
+        assertEquals(0, toTest.m)
     }
 
     @Test
     fun inputAndRandomNumberHaveAllMatchingDigits1SamePosition() {
         val classUnderTest = App()
         val toTest =  classUnderTest.checkUserInputAgainstGeneratedNumber(5678, 8576)
-        assertEquals(4, toTest.m)
-        assertEquals(1, toTest.n)
+        assertEquals(4, toTest.n)
+        assertEquals(1, toTest.m)
     }
 
     @Test
@@ -99,8 +99,8 @@ class AppTest {
     fun inputAndRandomNumberHave3MatchingDigits2SamePosition() {
         val classUnderTest = App()
         val toTest =  classUnderTest.checkUserInputAgainstGeneratedNumber(3586, 8576)
-        assertEquals(3, toTest.m)
-        assertEquals(2, toTest.n)
+        assertEquals(3, toTest.n)
+        assertEquals(2, toTest.m)
     }
 
 
@@ -108,24 +108,24 @@ class AppTest {
     fun inputAndRandomNumberHaveAllMatchingDigitsAllSamePosition() {
         val classUnderTest = App()
         val toTest =  classUnderTest.checkUserInputAgainstGeneratedNumber(8576, 8576)
-        assertEquals(4, toTest.m)
         assertEquals(4, toTest.n)
+        assertEquals(4, toTest.m)
     }
 
     @Test
     fun inputAndRandomNumberHaveSomeMatchingDigitsAllSamePosition() {
         val classUnderTest = App()
         val toTest =  classUnderTest.checkUserInputAgainstGeneratedNumber(8576231, 8576429)
-        assertEquals(5, toTest.m)
-        assertEquals(4, toTest.n)
+        assertEquals(5, toTest.n)
+        assertEquals(4, toTest.m)
     }
 
     @Test
     fun inputAndRandomNumberHave9Digits() {
         val classUnderTest = App()
         val toTest =  classUnderTest.checkUserInputAgainstGeneratedNumber(123456789, 987654321)
-        assertEquals(9, toTest.m)
-        assertEquals(1, toTest.n)
+        assertEquals(9, toTest.n)
+        assertEquals(1, toTest.m)
     }
 
 
